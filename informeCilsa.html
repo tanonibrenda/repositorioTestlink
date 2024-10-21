@@ -26,6 +26,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <header>
         <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand mb-4" href="index.html">Página Principal</a>
@@ -40,23 +41,56 @@
                 </div>
             </div>
         </nav>
-    
-</head>
+    </header>
+    <main>
 <h1 class="text-center">Informe sobre Test de Cilsa</h1>
-<section class="m-4">
+<section class="m-4 text-dark bg-white">
     <h2 class="text-center m-4">Test de Accesibilidad Web</h2>
     <p class="m-3">A continuación dejamos los informes que generamos utilizando Testlink sobre la accesibilidad web de la Página de Cilsa.org.<br>
     El informe está realizado sobre el homepage, becas y oportunidades, y el formulario de contacto.</p>
-    <ul>
-       
-       <li><a href="./informes/contraste.pdf">Contrate adecuado en las imágenes</a></li>
-       <li><a href="./informes/alt.pdf">Imagenes Informativas con texto alternativo adecuado</a></li>
+    <div class="m-2">
+    <ul class="container" id="informe">
+       <h3>Contraste Adecuado</h3>
+       <li class="text-dark bg-white"><a href="./informes/contraste.pdf">Test Plan</a></li>
+        <li><a href="./informes/testReport_Cte.pdf">Reporte</a></li>
+       <div class="card m-2" style="width: 18rem;">
+        <img src="./img/bajo_contraste.jpg" class="card-img-top" alt=" ">
+        <div class="card-body">
+          <h5 class="card-title">Contraste con WAVE</h5>
+          <p class="card-text">Captura de pantalla de la evaluacion con WAVE con ratio de 3.7 a 1.</p>
+          
+        </div>
+      </div>
+      <div class="card m-2" style="width: 18rem;">
+        <img src="./img/contraste.jpg" class="card-img-top" alt=" ">
+        <div class="card-body">
+          <h5 class="card-title">Confirmación del Contraste con Contrast Checker</h5>
+          <p class="card-text">Captura de pantalla de la evaluacion con Contrast Checker con ratio de 3.7 a 1.</p>
+          
+        </div>
+      </div>
+       <h3>Imágenes Informativas con texto alternativo adecuado</h3>
+       <li><a href="./informes/alt.pdf">Test Plan</a></li>
+       <li><a href="">Imagenes Informativas con texto alternativo adecuado</a></li>
+       <li><a href="https://drive.google.com/file/d/1NgcOv21zBdwQ0A1yovY2fGhRRBNqleXl/view?usp=sharing">Ver video de texto alternativo con tector de pantalla.</a></li>
        <li></li>
        <li></li>
-        
+
+       <h3>Lenguaje Declarado</h3>
+       <li><a href="./informes/testplan_lang.pdf">Test Plan</a></li>
+       <li><a href="./informes/testReport_lang.pdf">Reporte</a></li>
+       <div class="card m-2" style="width: 18rem;">
+        <img src="./img/lang.jpg" class="card-img-top" alt=" ">
+        <div class="card-body">
+          <h5 class="card-title">Código de Lenguaje</h5>
+          <p class="card-text">Captura de pantalla del código HTML con el atributo lang</p>
+          
+        </div>
+
+    </div>   
        
     </ul>
 </section>
-    
+</main>
 </body>
 </html>
